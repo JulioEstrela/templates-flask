@@ -1,0 +1,16 @@
+{% extends 'base-layout.html' %}
+
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='footer.css') }}">
+{% endblock %}
+
+{% block body %}
+    <footer class="breakout">
+        <p>Desenvolvido por Júlio Antunes Estrela. 2024.</p>
+        <nav>
+            <a href="./termos-de-uso">termos de uso</a>
+            <a href="./politica-de-privacidade">política de privacidade</a>
+            <a href="./como-usar">como usar</a>
+        </nav>
+    </footer>
+{% endblock %}

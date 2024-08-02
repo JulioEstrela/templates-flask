@@ -1,0 +1,30 @@
+@import "themes.css";
+
+header {
+    text-align: center;
+    padding: 1rem;
+
+    .nav__list {
+        display: flex;
+        justify-content: space-around;
+        .nav__item {
+            position: relative;
+        }
+        .nav__link::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            height: 3px;
+            width: 100%;
+            background-color: var(--primary-font-color);
+
+            opacity: 0;
+            transition: opacity 0.2s;
+            pointer-events: none;
+        }
+        .nav__link:hover::after {
+            opacity: 1;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+{% extends 'main-layout.html' %}
+
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='contato.css') }}">
+{% endblock %}
+
+{% block title %}Contato{% endblock %}
+
+{% block main %}
+<form action="" method="post">
+    <h1 class="title" >Contato</h1>
+
+    <label for="email">E-mail</label>
+    <input type="email" name="email" id="">
+
+    <label for="mensagem">Mensagem</label>
+    <textarea name="mensagem" rows="10" id=""></textarea>
+
+    <input type="submit" value="Enviar" disabled>
+</form>
+{% endblock %}

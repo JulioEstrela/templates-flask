@@ -1,0 +1,32 @@
+@import "themes.css";
+
+form > input[type=email],
+form > textarea {
+    width: 100%;
+    min-height: 2rem;
+
+    border: solid black 2px;
+}
+form > textarea {
+    resize: vertical;
+}
+
+form > input[type=submit] {
+    background-color: var(--button-color);
+    width: 40%;
+    min-height: 3rem;
+    color: var(--white);
+    font-size: 18px;
+}
+
+form > input[type=submit]:disabled {
+    opacity: 0.5;
+}
+
+form:has(input[type=submit]:disabled)::before {
+    content: "Formulário desativado";
+    
+    width: 40%;
+    height: 3rem;
+    background-color: rgba(255, 0, 0, 0.5);
+}

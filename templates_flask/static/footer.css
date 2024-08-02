@@ -1,0 +1,22 @@
+footer {
+    margin-top: 6rem;
+    border-top: solid black 2px;
+
+    text-align: center;
+    padding: 1rem;
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around; 
+    }
+    @media screen and (max-width: 500px){
+        nav {
+            flex-direction: column;
+        }
+    }
+    nav > * {
+        margin: 5px;
+    }
+
+}
